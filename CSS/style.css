@@ -8,7 +8,7 @@
     --debug:black;
     --header-box-color:rgb(74, 74, 74);
     --header-box-radius:5px;
-    --header-box-test-color:white;
+    --text-color:white;
     --header-main-bg-color:black;
     --footer-bg-color:rgb(34, 34, 34);
 }
@@ -35,8 +35,11 @@
 
 header{
     background-color: var(--header-main-bg-color) ;
-    width: 100vw;
+    width: 100%;
     height: 5vh;
+}
+body{
+    overflow-y: hidden;
 }
 
 .grid{
@@ -44,15 +47,33 @@ header{
     margin: 5px 5px;
     background-color: var(--header-box-color) ;
     border-radius: var(--header-box-radius) ;
-    color: var(--header-box-test-color);
+    color: var(--text-color);
 }
 main{
-    background-color: white;
-    height: 80vh;
-    overflow: scroll;
+    background-color: var(--header-main-bg-color);
 }
-.container
+h3{
+    font-weight: normal;
+}
+.container{
+    max-width: 80vw;
+    height: 85vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+.buttons-h{
+    height: 100%;
+}
+.buttons-settings{
+    padding: 0 10px;
+}
+.icon{
+    font-size: 2.5em;
+}
 footer{
     background-color: var(--footer-bg-color);
-    height: 15vh;
+    height: 10vh;
+    color: var(--text-color);
 }
