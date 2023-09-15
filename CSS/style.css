@@ -5,7 +5,7 @@
     font-family: 'Noto Sans', sans-serif;
 }
 :root{
-    --debug:black;
+    --debug:none;
     --header-box-color:rgb(74, 74, 74);
     --header-box-radius:5px;
     --text-color:white;
@@ -123,4 +123,5 @@ footer{
     background-color: var(--footer-bg-color);
     height: 10vh;
     color: var(--text-color);
+    text-align: center;
 }
